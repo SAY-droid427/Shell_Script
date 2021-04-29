@@ -1,6 +1,6 @@
 #! /bin/bash
 
-function loop1(){
+function loop(){
     NAMES="Percy Annabeth Grover Chiron"
     for NAME in $NAMES
     do
@@ -8,4 +8,4 @@ function loop1(){
     done
 }
 
-loop1
+loop
