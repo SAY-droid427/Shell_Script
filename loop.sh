@@ -1,11 +1,11 @@
 #! /bin/bash
 
-function loop1(){
-    NAMES="Percy Annabeth Grover Chiron"
+function loop(){
+    NAMES="Percy Annabeth Piper Chiron"
     for NAME in $NAMES
     do
        echo "Welcome to Camp Half-Blood, $NAME"
     done
 }
 
-loop1
+loop
