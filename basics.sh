@@ -12,8 +12,8 @@ NAME="Dracarys"
 
 #USER INPUT
 
-#read -p "Enter your name: " NAME
-#echo "Hello $NAME, nice to meet you!"
+read -p "Enter your name: " NAME
+echo "Hello $NAME, nice to meet you!"
 
 # SIMPLE IF STATEMENT
 
@@ -39,30 +39,30 @@ else
 fi
 
 # FILE CONDITIONS
-#FILE="test.txt"
-#if [ -f "$FILE" ]
-#then
-#    echo "$FILE is a file"
-#else
-#    echo "$FILE is NOT a file"
-#fi
+FILE="test.txt"
+if [ -f "$FILE" ]
+then
+    echo "$FILE is a file"
+else
+    echo "$FILE is NOT a file"
+fi
 
 #CASE STATEMENT
-#read -p "Are you 21 or not? Y/N " ANSWER
-#case "$ANSWER" in
-#    [yY] | [yY][eE][sS])
-#      echo "You can have a beer :)"
-#      ;;
-#    [nN] | [nN][oO])
-#      echo "Sorry, no drinking"
-#      ;;
-#    *)
-#      echo "Please enter y/yes or n/no"
-#      ;;
-#esac
+read -p "Are you 21 or not? Y/N " ANSWER
+case "$ANSWER" in
+    [yY] | [yY][eE][sS])
+      echo "You can have a beer :)"
+      ;;
+    [nN] | [nN][oO])
+      echo "Sorry, no drinking"
+      ;;
+    *)
+      echo "Please enter y/yes or n/no"
+      ;;
+esac
 
 # SIMPLE FOR LOOP
-NAMES="Sayani Rohan Alice Mark Kit"
+NAMES="Sayani Alexis Alice Mark Kit"
 for NAME in $NAMES
    do
       echo "Hello $NAME"
