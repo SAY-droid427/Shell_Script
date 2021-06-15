@@ -5,11 +5,11 @@
 while read p
 do
     echo $p
-done < test.properties
+done < hello/test.properties
 
 # Second method
 
-cat test.properties | while read p
+cat hello/test.properties | while read p
 do 
     echo $p
 done
@@ -19,4 +19,4 @@ done
 while IFS= read -r line
 do
     echo $line
-done <test.properties
+done <hello/test.properties
