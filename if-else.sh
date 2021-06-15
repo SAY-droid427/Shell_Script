@@ -47,3 +47,41 @@ function condition3(){
 }
 
 condition3
+
+count=10
+if [ $count -eq 9 ]
+then 
+     echo "Condition is not true"
+fi
+
+word=abc
+
+if [ $word ="abc" ]
+then 
+    echo "Condition is true"
+fi
+
+# When using equality operators with non-numbers use double brackets
+
+word=a
+
+if [[ $word < "b" ]]
+then 
+    echo "Condition is true"
+else 
+    echo "Condition is false"
+fi
+
+# if-elif
+
+if [[ $word=="b" ]]
+then 
+    echo "Condition b is true"
+elif [[ $word=="a" ]]
+    echo "Condition a is true"
+else 
+    echo "Condition is false"
+fi
+
+
+
